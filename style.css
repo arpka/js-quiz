@@ -1,0 +1,98 @@
+/* 全体の背景画像とスタイル */
+body {
+  margin: 0;
+  font-family: "Yu Gothic", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url("images/hanabi.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* コンテンツ全体を囲むボックス */
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 見出し */
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* 問題番号・本文 */
+.question-number,
+.question-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* ○×ボタン */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 24px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+button.true {
+  background-color: #4fe1e4;
+  color: black;
+}
+
+button.false {
+  background-color: #ff9999;
+  color: black;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* 結果表示・スコア */
+.feedback,
+.score {
+  font-size: 20px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* もう一回ボタン */
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #ffffffaa;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+.restart-btn:hover {
+  background-color: #ffffffdd;
+}
